@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type = "text/javascript" src="js/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="./js/funcoes.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
+   
+    </head>
+    <body>
+        <!-- COMEÇO DA HEADER -->
+        <div class="header">
+            <a href="#" class="logo"><img id="logo" src="./img/logo.png" height="71px"></a>
+            <div class="header-left">
+              <a class="menu" href="#">Home</a>
+              <a class="menu" href="#contato">Contato</a>
+              <a class="menu" href="#corpo">Sobre nós</a>
+              <a class="menu" href="./paginas/DVDs.html">DVDs</a>
+              <input type="text" id="buscar" placeholder="Buscar"> <button id="botao_buscar" type="submit"><img src="./img/search.png" height="23px"></button>
+            </div>
+            <div class="header-right">
+              <a class="user" href="./paginas/login.html" id="usuarios"> <img src="./img/user.jpg" height="20px"> Entrar</a>
+              <a class="user" href="./paginas/carrinho.html"> <img src="./img/cart.png" height="21px"> Carrinho</a>
+            </div>
+          </div>
+          <!-- FIM DA HEADER -->
+
+          <!-- COMEÇO DO MEIO -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <p id="titulo">Qual seu filme de terror favorito?</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <p id="subtitulo">Pronto pra descobrir?</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <br>
+              <p id="corpo">Aqui na MovieBuffs nossa missão é dar a<br>
+                oportunidade para todos os amantes do terror<br>
+                de aumentarem sua coleção de acordo com suas<br>
+                necessidades e vontades.
+                <br><br>
+                Clique no botão abaixo para realizar o seu<br>
+                cadastro e desfrutar de vários clássicos do terror!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <a id="botao_cadastro" href="./paginas/cadastro.html">Cadastre-se</a>
+            </div>
+          </div>
+          <div class="row">
+            
+              <p class="titulos"> Produtos mais vendidos </p>
+              <div class="col-xl-4">
+                <br><br><br>
+                    <div class="filme1">
+                      <br>
+                      <span class="titulo_filmes"> Poltergeist - O Fenômeno </span>
+                      <br>
+                      <span class="genero"> Sobrenatural </span>
+                      <br><br>
+                      <img id="poster_resp" src="./img/poster poltergeist.jpg" height="380px" width="250px">
+                      <br><br>
+                      <span class="preco"> R$9,99 </span>
+                      <br><br>
+                      qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                      <br><br>
+                    
+                      <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Poltergeist - O Fenômeno', document.getElementById('qtd1').value, '9.99', 1)" class="bcarrinho">Adicionar ao carrinho</button>
+                      <br><br>
+                    </div>
+              </div>
+
+              <div class="col-xl-4">   
+                <br><br><br>   
+                    <div class="filme2">
+                      <br>
+                      <span class="titulo_filmes"> Quando as Luzes se apagam </span>
+                      <br>
+                      <span class="genero"> Sobrenatural </span>
+                      <br><br>
+                      <img id="poster_resp" src="./img/poster qnd as luzes.jpg" height="380px" width="250px">
+                      <br><br>
+                      <span class="preco"> R$14,99 </span>
+                      <br><br>
+                      qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+                      <br><br>
+                      
+                      <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Quando as Luzes se apagam', document.getElementById('qtd2').value, '14.99', 2)" class="bcarrinho">Adicionar ao carrinho</button>
+                      <br><br>
+                    </div>
+              </div>
+              
+              
+              <div class="col-xl-4">
+                <br><br><br>
+                    <div class="filme3">
+                      <br>
+                      <span class="titulo_filmes"> Invocação do mal </span>
+                      <br>
+                      <span class="genero"> Sobrenatural </span>
+                      <br><br>
+                      <img id="poster_resp" src="./img/poster invocaçao.jpg" height="380px" width="250px">
+                      <br><br>
+                      <span class="preco"> R$16,99 </span>
+                      <br><br>
+                      qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+                      <br><br>
+                      
+                      <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Invocação do Mal', document.getElementById('qtd3').value, '16.99', 3)" class="bcarrinho">Adicionar ao carrinho</button>
+                      <br><br>
+                    </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xl-12">
+                <a href="./paginas/DVDs.html"><button class="vermais">Ver mais</button></a>
+              </div>
+            </div>
+
+              <p class="titulos">Review dos produtos</p>
+              <div class="container_video">
+               <iframe class="video" width="853" height="480" src="https://www.youtube.com/embed/3fqJN_rjfhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <br><br><br><br>
+              
+              <p class="titulos">Depoimentos de clientes</p>
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="depoimento1">
+                    <p><br>"Que filme MERDA!!!! Eu achava que<br>
+                      o remake de 2015 tinha sido ruim,<br>mas
+                      eles fizeram um MILAGRE com a<br>
+                      referência que tiveram. Mas a equipe
+                      de<br>vendas do site é muito boa e
+                      atenciosa.<br>Comprarei novamente no
+                      futuro."</p>
+                    
+                      <span class="cliente"><img src="./img/maria.png" class="foto_cliente">Maria da Silva</span>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="depoimento2">
+                    <p><br>"O filme do Ted Bundy é simplesmente<br>
+                      incrível! Estou muito agradecida à loja<br>
+                    por terem me dado a chance de adicionar<br>
+                    este filme maravilhoso pra minha coleção.
+                    <br>Com certeza vou revisitar o site
+                    assim<br>que quiser comprar meu próximo DVD."</p>
+                    
+                    <span class="cliente"><img src="./img/joaquina.png" class="foto_cliente">Joaquina Santos</span>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="depoimento3">
+                    <p><br>"Nunca pensei que algum dia fosse<br>
+                      poder assistir à Sexta-Feira 13 - um<br>clássico! - em um DVD
+                      com a qualidade<br> de qualquer filme lançado
+                      após<br>os anos 2000."
+                    </p>
+                    <br>
+                    <span class="cliente"><img src="./img/marcio.png" class="foto_cliente">Márcio Oliveira</span>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+              
+          </div>
+          <p class="titulos" id="contato">Endereço e Contato</p>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="contato">
+                <br>
+                <a id="ctt">Endereço: Rua Monsenhor Ivo Zanlorenzi, 4400 - Ecoville, Curitiba - PR, 81280-350</a>
+                  <br>
+                  <a id="ctt">Telefone para contato: (41) 998977781</a>
+                  <br>
+                  <a id="ctt">Email para contato: marinacbraga@hotmail.com e csoinegg@gmail.com</a>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="row">
+			<div class="col-xl-12">
+				<p class="titulos"> Nossa localização!</p>
+				<div id="map">
+				
+				</div>
+			</div>
+		  </div>
+        </div>
+        <br><br><br>
+              <footer class="rodape">
+                    <div id="tabela_icones">
+                      <table>
+                        <tr>
+                        <td>
+                          <a href="https://www.instagram.com/dontkillmemr/"><img id="icones" src="./img/Icon awesome-pinterest.png"></a>
+                        </td>
+                        <td>
+                          <a href="https://www.instagram.com/dontkillmemr/"><img id="icones" src="./img/Icon simple-instagram.png"></a>
+                        </td>
+                        <td>
+                          <a href="https://twitter.com/moviebuffs3"><img id="icones" src="./img/Icon ionic-logo-facebook.png"></a>
+                        </td>
+                        <td>
+                          <a href="https://twitter.com/moviebuffs3"><img id="icones" src="./img/Icon awesome-twitter.png"></a>
+                        </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <span>Nos siga também em nossas redes sociais!</span>
+                </footer>
+    </body>
+</html>
