@@ -27,72 +27,64 @@
 
           <!-- COMEÇO DO MEIO -->
 
-				<p class="titulos"> Todos os produtos </p>
-
+			<p class="titulos"> Todos os produtos </p>
 				<div class="container">
 					<div class="row">
 						 <div class="col-xl-4">
-						<br><br><br>
-						    <div class="filme1">
-						      <br>
-						      <span class="titulo_filmes"> Invocação do mal </span>
-						      <br>
-						      <span class="genero"> Sobrenatural </span>
-						      <br><br>
-						      <img id="poster_resp" src="./img/poster invocaçao.jpg" height="380px" width="250px">
-						      <br><br>
-						      <span class="preco"> R$16,99 </span>
-						      <br><br>
-						      qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
-						      <br><br>
-
-						      <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Invocação do Mal', document.getElementById('qtd1').value, '16.99', 1)" class="bcarrinho">Adicionar ao carrinho</button>
-						      <br><br>
-						    </div>
-					      </div>
-
-					      <div class="col-xl-4">   
-						<br><br><br>   
-						    <div class="filme2">
-						      <br>
-						      <span class="titulo_filmes"> Quando as Luzes se apagam </span>
-						      <br>
-						      <span class="genero"> Sobrenatural </span>
-						      <br><br>
-						      <img id="poster_resp" src="./img/poster qnd as luzes.jpg" height="380px" width="250px">
-						      <br><br>
-						      <span class="preco"> R$14,99 </span>
-						      <br><br>
-						      qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
-						      <br><br>
-
-						      <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Quando as Luzes se apagam', document.getElementById('qtd2').value, '14.99', 2)" class="bcarrinho">Adicionar ao carrinho</button>
-						      <br><br>
-						    </div>
-					      </div>
-
-
-					      <div class="col-xl-4">
-						<br><br><br>
-						    <div class="filme3">
-						      <br>
-						      <span class="titulo_filmes"> Poltergeist - O Fenômeno </span>
-						      <br>
-						      <span class="genero"> Sobrenatural </span>
-						      <br><br>
-						      <img id="poster_resp" src="./img/poster poltergeist.jpg" height="380px" width="250px">
-						      <br><br>
-						      <span class="preco"> R$9,99 </span>
-						      <br><br>
-						      qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
-						      <br><br>
-
-						      <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Poltergeist - O Fenômeno', document.getElementById('qtd3').value, '9.99', 3)" class="bcarrinho">Adicionar ao carrinho</button>
-						      <br><br>
-						    </div>
-					      </div>
+							<div class="filme1">
+								<br>
+								<span class="titulo"> Invocação do Mal </span>
+								<br>
+								<span class="genero"> Sobrenatural </span>
+								<br><br>
+								<img src="../img/poster invocaçao.jpg" class="poster">
+								<br>
+								<span class="preco"> R$16,99 </span>
+								<br>
+								qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+								<br><br>
+							
+								<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Invocação do Mal', document.getElementById('qtd1').value, '9.99', 1)" class="bcarrinho">Adicionar ao carrinho</button>
+								<br><br>
+							</div>
 						</div>
-					</div>
+						<div class="col-xl-4">
+							<div class="filme2">
+								<br>
+								<span class="titulo" id="sobrenatural"> Quando as Luzes se apagam </span>
+								<br>
+								<span class="genero"> Sobrenatural </span>
+								<br><br>
+								<img src="../img/poster qnd as luzes.jpg" class="poster">
+								<br>
+								<span class="preco"> R$14,99 </span>
+								<br>
+								qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+								<br><br>
+								
+								<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Quando as Luzes se apagam', document.getElementById('qtd2').value, '14.99', 2)" class="bcarrinho">Adicionar ao carrinho</button>
+								<br><br>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<div class="filme3">
+								<br>
+								<span class="titulo"> Poltergeist - O Fenômeno </span>
+								<br>
+								<span class="genero"> Sobrenatural </span>
+								<br><br>
+								<img src="../img/poster poltergeist.jpg" class="poster">
+								<br>
+								<span class="preco"> R$9,99 </span>
+								<br>
+								qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+								<br><br>
+								
+								<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Poltergeist - O Fenômeno', document.getElementById('qtd3').value, '9.99', 3)" class="bcarrinho">Adicionar ao carrinho</button>
+								<br><br>
+							</div>
+						</div>
+						</div>
 					<br><br>
 					<div class="row">
 						<div class="col-xl-4">
